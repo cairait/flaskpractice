@@ -1,0 +1,11 @@
+h1 {
+    text-align: center;
+    color:aqua;
+
+}
+
+.main {
+    padding-left: 100px;
+    padding-right: 100px;
+    text-align: left;
+}

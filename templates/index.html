@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<head>
+    <title>WELCOME FLASK APP</title>
+    
+    <link rel="stylesheet" type=text/css href="{{ url_for('static', filename='style.css') }}">
+    
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css" integrity="sha384-4ZPLezkTZTsojWFhpdFembdzFudphhoOzIunR1wH6g1WQDzCAiPvDyitaK67mp0+" crossorigin="anonymous">
+</head>
+<h1>This is my ROOT PAGE in index html</h1>
+
+<body>
+
+<div>
+    <p>Please enter your name</p>
+
+    <form class="pure-form" method="POST" action="/">
+    Name:<br>
+    <input type="text" name="username"><br>
+    Favorite Food:<br>
+    <input type="text" name="userfood"><br>
+    <button type="submit" class"purebutton pure-button-primary" value="submit">Submit</button>
+    </form>
+
+</div>
+<div>
+
+<br>
+
+</div>
+    {% if name %}
+        <p>Welcome to my site {{ name }}!</p>
+        <p>Your favorite food is {{ food }}</p>
+    {% endif %}
+</body>
